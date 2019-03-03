@@ -1,5 +1,9 @@
 .header {
-  background-color: #000;
-  color: white;
-  font-weight: bold;
+  background-color: #add8e6;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin: 5px;
 }
