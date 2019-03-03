@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.ul__li {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
