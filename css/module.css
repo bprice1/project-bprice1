@@ -19,6 +19,14 @@
   top: 10px;
 }
 
+.nav__ul {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
 /* .nav__ul {
   display: flex;
   justify-content: space-around;
