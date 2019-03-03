@@ -41,7 +41,8 @@
   transition: transform 1s, opacity 1s;
 }
 
-.ul__li:hover .ul__ul {
+.ul__li:hover .ul__ul,
+.ul__li:focus .ul__ul {
   opacity: 1;
   transform: scaleY(1);
 }
@@ -88,12 +89,14 @@
     transition: transform 1s, opacity 1s;
   }
 
-  .ul__li:hover .ul__ul {
+  .ul__li:hover .ul__ul,
+  .ul__li:focus .ul__ul {
     opacity: 1;
     transform: scaleY(1);
   }
 
-  li:hover {
+  li:hover,
+  li:focus {
     background-color: lightgrey;
   }
 }
