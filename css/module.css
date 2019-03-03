@@ -77,7 +77,7 @@
 
   .ul__ul {
     align-items: center;
-    background-color: lightgray;
+    background-color: lightblue;
     display: flex;
     flex-direction: column;
     opacity: 0;
@@ -93,12 +93,7 @@
     transform: scaleY(1);
   }
 
-  .logo:hover {
-    color: black;
-  }
-
   li:hover {
-    color: black;
-    background-color: red;
+    background-color: lightgrey;
   }
 }
