@@ -5,9 +5,10 @@
 }
 
 .logo {
-  display: inline-block;
+  align-content: flex-start;
+  display: flex;
   font-size: 22px;
-  margin: 5px;
+  margin: 0;
 }
 
 .h1,
