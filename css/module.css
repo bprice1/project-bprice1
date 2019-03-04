@@ -88,7 +88,7 @@
     right: 175px;
     transform: scaleY(0);
     transform-origin: top;
-    transition: transform 1s, opacity 1s;
+    transition: transform 0.5s, opacity 0.5s;
   }
 
   .ul__li:hover .ul__ul,
