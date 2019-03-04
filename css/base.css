@@ -3,10 +3,11 @@
   padding: 0;
 }
 
-html {
+.html {
   background-color: lightblue;
 }
-body {
+
+.body {
   font-family: "Josefin Sans", sans-serif;
 }
 

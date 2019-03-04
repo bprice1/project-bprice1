@@ -9,3 +9,15 @@
   font-size: 22px;
   margin: 5px;
 }
+
+.p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 15px;
+  padding: 5px;
+}
+
+.footer {
+  clear: right;
+  font-size: 70%;
+  text-align: center;
+}
