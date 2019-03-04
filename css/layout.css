@@ -10,6 +10,12 @@
   margin: 5px;
 }
 
+.h1,
+.p {
+  margin: 15px;
+  padding: 5px;
+}
+
 .p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 15px;
