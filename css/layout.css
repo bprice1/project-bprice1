@@ -4,6 +4,11 @@
   flex-direction: column;
 }
 
+.header__img {
+  height: auto;
+  width: 100%;
+}
+
 .logo {
   align-content: flex-start;
   display: flex;
