@@ -37,5 +37,6 @@
 .footer {
   clear: right;
   font-size: 70%;
+  margin: 30px 10px 30px;
   text-align: center;
 }

@@ -99,8 +99,8 @@
     transform: scaleY(1);
   }
 
-  li:hover,
-  li:focus {
+  .ul__li:hover,
+  .ul__li:focus {
     background-color: lightgrey;
   }
 }
