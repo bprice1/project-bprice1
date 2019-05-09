@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.html {
+  background-color: $color-background;
+}
+
+.body {
+  font-family: $font-primary;
+}
+
+a {
+  color: $color-text-alt;
+  text-decoration: none;
+}

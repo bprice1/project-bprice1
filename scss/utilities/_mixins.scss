@@ -1,0 +1,89 @@
+    
+// ==========================================================================
+// Mixins
+// Thanks to @sutterlity
+// https://github.com/sutter/POPY-Starter-integration-web/blob/master/scss/tools/_mixins.scss
+// ==========================================================================
+
+// ============================================================
+// = Buttons
+// ============================================================
+// This customises your buttons with a different background color and text color.
+// If no text color is specified it will default to white.
+
+@mixin btn($color-background, $color-text: #fff) {
+    background-color: $color-background;
+    border-color: darken($color-border, 6%);
+    color: $color-text;
+    padding: 5px;
+  }
+  
+  // ============================================================
+  // = Media Queries
+  // ============================================================
+  // Allows you to use inline media queries.
+  // @see http://jakearchibald.github.com/sass-ie/
+  
+  // @example
+  // .foobar { @include mq(20em) { ... } }
+  
+  @mixin mq($breakpoint, $query: "min-width", $type: "screen") {
+    // breakpoint can be a variable
+    @media #{$type} and (#{$query}: #{$breakpoint}) {
+      @content;
+    }
+  }
+  
+  // ============================================================
+  // = Sticky Footer
+  // ============================================================
+  @mixin sticky-footer(
+    $footer_height,
+    $root_selector: ".site",
+    $root_footer_selector: ".push",
+    $footer_selector: "footer"
+  ) {
+    html,
+    body {
+      height: 100%;
+    }
+    #{$root_selector} {
+      width: 100%;
+      min-height: 100%;
+      height: auto !important;
+      height: 100%;
+      margin: 0 auto -#{$footer_height};
+      #{$root_footer_selector} {
+        height: #{$footer_height};
+      }
+    }
+    #{$footer_selector} {
+      clear: both;
+      position: relative;
+      height: #{$footer_height};
+    }
+  }
+  
+  // ============================================================
+  // Inline Block
+  // Custom version of http://bit.ly/thoughtbot-bourbon-inline-block
+  // ============================================================
+  
+  @mixin inline-block($alignment: baseline) {
+    display: inline-block;
+    @if $alignment and $alignment != none {
+      vertical-align: $alignment;
+    }
+  }
+  
+  // ============================================================
+  // $Retina Displays
+  // ============================================================
+  
+  @mixin image-2x($image, $width, $height) {
+    @media (min-resolution: 1.3dppx) {
+      // on retina, use an image that's scaled by 2
+      background-image: url($image);
+      background-size: $width $height;
+    }
+  }

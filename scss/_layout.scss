@@ -1,0 +1,149 @@
+.header {
+  background-color: $color-header;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__img {
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%;
+}
+
+.logo {
+  align-content: flex-start;
+  display: flex;
+  margin: 0;
+
+  img {
+    height: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+
+.h1 {
+  margin: 15px;
+  padding: 5px;
+}
+
+.h2 {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.p {
+  @extend .h1;
+
+  font-family: $font-para;
+  margin: 15px;
+  padding: 5px;
+}
+
+.footer {
+  clear: right;
+  font-size: 70%;
+  margin: 30px 10px 30px;
+  text-align: center;
+}
+
+.main {
+  margin: 0 20px;
+
+  ul {
+    list-style-type: disc;
+    margin-left: 30px;
+    padding: 15px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "aside"
+    "main"
+    "footer";
+  grid-template-columns: repeat(1, [col] auto);
+  grid-template-rows: repeat(2, [row] auto);
+
+  header {
+    background-color: $color-header;
+    border-bottom: solid 2px black;
+    grid-area: header;
+    text-align: center;
+
+    h1 {
+      color: $color-text-alt;
+      margin: 5px;
+    }
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  aside {
+    background-color: $color-header;
+    grid-area: aside;
+    text-align: center;
+
+    h2 {
+      margin: 10px;
+    }
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  @media screen and (min-width: 768px) {
+    grid-template-areas:
+      'header header'
+      'aside main'
+      'footer footer';
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows:
+      minmax(60px, auto)
+      minmax(86vh, auto)
+      minmax(80px, auto);
+
+    footer {
+      background-color: $color-header;
+      margin: 0;
+      padding: 10px;
+    }
+  }
+}
+
+.sub-grid {
+  display: grid;
+  grid-column: col 3 / span 2;
+  grid-gap: 15px;
+  grid-row: row 2;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 20px;
+
+  .fig {
+    background-color: $color-header;
+    border: solid 3px black;
+    color: $color-text-alt;
+    font-size: 1.5rem;
+    text-align: center;
+
+    img {
+      border-bottom: solid 3px black;
+      width: 100%;
+    }
+
+    figcaption {
+      padding-bottom: 5px;
+    }
+  }
+}
