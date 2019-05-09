@@ -1,4 +1,4 @@
-    
+
 // ==========================================================================
 // Mixins
 // Thanks to @sutterlity
@@ -13,27 +13,27 @@
 
 @mixin btn($color-background, $color-text: #fff) {
     background-color: $color-background;
-    border-color: darken($color-border, 6%);
+    border-color: darken($midnight-blue, 6%);
     color: $color-text;
     padding: 5px;
   }
-  
+
   // ============================================================
   // = Media Queries
   // ============================================================
   // Allows you to use inline media queries.
   // @see http://jakearchibald.github.com/sass-ie/
-  
+
   // @example
   // .foobar { @include mq(20em) { ... } }
-  
+
   @mixin mq($breakpoint, $query: "min-width", $type: "screen") {
     // breakpoint can be a variable
     @media #{$type} and (#{$query}: #{$breakpoint}) {
       @content;
     }
   }
-  
+
   // ============================================================
   // = Sticky Footer
   // ============================================================
@@ -63,23 +63,23 @@
       height: #{$footer_height};
     }
   }
-  
+
   // ============================================================
   // Inline Block
   // Custom version of http://bit.ly/thoughtbot-bourbon-inline-block
   // ============================================================
-  
+
   @mixin inline-block($alignment: baseline) {
     display: inline-block;
     @if $alignment and $alignment != none {
       vertical-align: $alignment;
     }
   }
-  
+
   // ============================================================
   // $Retina Displays
   // ============================================================
-  
+
   @mixin image-2x($image, $width, $height) {
     @media (min-resolution: 1.3dppx) {
       // on retina, use an image that's scaled by 2

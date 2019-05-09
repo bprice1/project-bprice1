@@ -58,36 +58,60 @@
         </ul>
       </nav>
     </header>
-    <main class="main">
-      <img
-        class="main__img"
-        srcset="
-          images/ePortfolioBanner_1280.jpg 1280w,
-          images/ePortfolioBanner_2559.jpg 2559w
-        "
-        sizes="(max-width: 1280px) 1280px,
-              2559px"
-        src="images/ePortfolioBanner_2559.jpg"
-        alt="ePortfolio Banner"
-      />
-      <h1 class="h1">Brian Price</h1>
-      <p class="p">
-        As a military veteran of 25 years of service, I have a vast amount of
-        experience and skills that will be beneficial to an employer. Although
-        not employed by the military in the field of Web Design, I decided upon
-        my release of military service to expand my horizons into this field. As
-        a graduate of Columbia Southern University and, more recently,
-        Southwestern Illinois College, I am excited to put my education and
-        experience to use.
-      </p>
-      <p class="p">
-        Please visit my other ePortfolio pages to learn more about my web design
-        skills and review my resume for more information on my other skill-sets.
-        If you are interested in reaching out to me, I'd love to connect.
-      </p>
-      <p class="p">
-        Thank you for taking the time to visit my website. Have a great day!
-      </p>
+    <main class="main__form">
+
+        <h2>Contact Form</h2>
+
+        <div class="container">
+          <div>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email..">
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <div class="div__button"><button type="submit">Submit Information</button></div>
+          </form>
+        </div>
+
+      <!-- <form>
+        <h1>Contact Form</h1>
+        <section>
+            <h2>Information</h2>
+            <p>
+              <label for="name">
+                <span>Name: </span>
+              </label>
+              <input type="text" id="name" name="username">
+            </p>
+            <p>
+              <label for="email">
+                <span>E-mail: </span>
+              </label>
+              <input type="email" id="email" name="useremail">
+            </p>
+            <p>
+              <label for="phone">
+                <span>Phone: </span>
+              </label>
+              <input type="text" id="phone" name="userphone">
+            </p>
+          <p>
+            <label for="subject"><span>Subject: </span></label>
+            <textarea id="subject" name="subject"></textarea>
+          </p>
+        </section>
+        <p> <button type="submit">Submit Information</button> </p>
+        </form> -->
     </main>
     <footer class="footer">Copyright &copy; 2019</footer>
     <script src="scripts.js"></script>
